@@ -1,0 +1,71 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>AllEmployee</servlet-name>
+  	<servlet-class>com.main.AllEmployee</servlet-class>
+  	
+  	<init-param>
+  		<param-name>info</param-name>
+  		<param-value>The servlet is specifically designed to view all employees list</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AllEmployee</servlet-name>
+  	<url-pattern>/all</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GetEmployeeByName</servlet-name>
+  	<servlet-class>com.main.GetEmployeeByName</servlet-class>
+  	
+  	<init-param>
+  		<param-name>info</param-name>
+  		<param-value>The servlet is specifically designed to view employees list by name search</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetEmployeeByName</servlet-name>
+  	<url-pattern>/byname</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddEmployee</servlet-name>
+  	<servlet-class>com.main.AddEmployee</servlet-class>
+  	
+  	<init-param>
+  		<param-name>info</param-name>
+  		<param-value>The servlet is specifically designed to add employees</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddEmployee</servlet-name>
+  	<url-pattern>/addEmployee</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<servlet-class>com.main.DeleteEmployeeById</servlet-class>
+  	
+  	<init-param>
+  		<param-name>info</param-name>
+  		<param-value>The servlet is specifically designed to delete employees</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+</web-app>
